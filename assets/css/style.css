@@ -1,0 +1,444 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Variables CSS */
+:root {
+  /* Colors */
+  --primary-color: #ba2530;
+  --primary-light-color: #ffd6d7;
+  --yellow-color: #fec65e;
+  --white-color: #fff;
+  --black-color: #323232;
+
+  /* Font & Typography */
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 58px;
+  --h1-font-size: 45px;
+  --normal-font-size: 18px;
+  --small-font-size: 16px;
+  --smaller-font-size: 14px;
+
+  /* Font Weight */
+  --font-semibold: 600;
+  --font-medium: 500;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-dark {
+  color: var(--black-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light-color) !important;
+}
+
+/* Costum Scrollbar */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+/* Navbar */
+.navbar {
+  padding: 12px;
+  transition: all 0.5s ease;
+}
+
+.navbar-brand span {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.nav-link {
+  margin-right: 39px;
+  font-weight: var(--font-medium);
+  color: var(--black-color);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.04);
+}
+
+/* Button */
+.btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: drop-shadow(0px 10px 30px rgba(186, 37, 48, 0.15));
+  background-color: var(--primary-color);
+}
+
+.btn-primary-light {
+  color: var(--primary-color);
+  background-color: var(--primary-light-color);
+}
+
+.account-form {
+  position: fixed;
+  top: 0;
+  right: -105%;
+  width: 25rem;
+  background: #fff;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+  height: 100%;
+  z-index: 1200;
+  padding: 2rem;
+  text-align: center;
+}
+.account-form.active {
+  right: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.363);
+}
+.account-form #close-form {
+  position: absolute;
+  top: 1rem;
+  right: 2.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #444;
+}
+.account-form #close-form:hover {
+  transform: rotate(90deg);
+}
+
+.form-body{
+  text-align: left;
+}
+.form-body .form-group{
+  margin-top: 10px;
+}
+.form-body #text-info{
+  margin-top: 10px;
+  width: 290px;
+}
+
+/* Badge  */
+.badge {
+  padding: 0.7rem;
+  border-radius: 8px;
+  font-weight: var(--font-medium);
+}
+
+/* Home */
+section.home {
+  padding: 6rem 0 10rem;
+}
+
+
+.text-home-bold {
+  font-size: var(--biggest-font-size);
+  line-height: 87px;
+}
+
+.text-home-bold span {
+  color: var(--primary-color);
+}
+
+.text-home-reguler {
+  font-size: var(--normal-font-size);
+  line-height: 27px;
+}
+
+.home-btn .video-play {
+  font-weight: var(--font-medium);
+  padding: 1rem;
+}
+
+/* Services */
+section.services .content .services-title {
+  font-weight: var(--font-semibold);
+}
+
+/* About */
+section.about {
+  padding: 10rem 0 10rem;
+}
+
+/* Menu */
+section.menu .card-menu {
+  filter: drop-shadow(0px 5.42857px 40.7143px rgba(0, 0, 0, 0.05));
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+section.menu .card-menu .item {
+  position: relative;
+}
+
+section.menu .card-menu .item img {
+  width: 100%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+section.menu .card-menu .item img:hover{
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+section.menu .card-menu .item .menu-title {
+  font-weight: var(--font-semibold);
+}
+
+/* Testimonials */
+section.testimonials {
+  padding: 10rem 0 10rem;
+}
+
+section.testimonials .content-testimonials i {
+  color: var(--yellow-color);
+  font-size: 1.3rem;
+}
+
+section.testimonials .carousel-indicators {
+  bottom: -3rem;
+}
+
+section.testimonials .carousel-indicators button {
+  width: 0.7rem;
+  height: 0.7rem;
+  outline: none;
+  border: none;
+  margin-right: 0.2rem;
+}
+
+/* Gallery */
+.gallery-content{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.gallery2{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery3{
+  margin-top: -30px;
+  margin-bottom: 50px;
+  display: none;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 323px;
+  width: 87%;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+.card-body{
+  background-color: #32323233;
+}
+#prev{
+  background-color: #3232324d;
+}
+#next{
+  background-color: #3232324d;
+}
+.card-text{
+  margin-top: -12px;
+}
+
+/* Footer */
+footer.footer-section .copyright {
+  font-size: var(--smaller-font-size);
+  padding: 1rem;
+}
+
+.footer-section .footer-brand span {
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+.footer-content span {
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+
+.footer-link li a {
+  color: var(--black-color);
+}
+
+.footer-link li a:hover {
+  color: var(--primary-color);
+}
+
+hr {border-top: 1px solid #000; width:100%;}
+
+a {color: #000;}
+
+a:link{text-decoration:none;}
+
+#contact2{
+    letter-spacing:3px;
+}
+
+#author a{
+  color: #fff;
+  text-decoration: none;
+    
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+#faq{
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  min-height: 100vh;
+}
+
+#faq .add{ /*Add is the name for the plus icon*/
+  display: block;
+}
+
+#faq .faq-content{
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+#faq .remove{ /*Remove is the name for the less icon*/
+  display: none;
+}
+
+#faq i{ 
+  font-size: 30px;
+}
+
+/*Accordion container and each item*/
+.accordion{
+  max-width: 1000px;
+  
+  margin: 0 auto;
+  padding: 0 1.5rem;
+} 
+
+.accordion-item{
+  background-color: transparent;
+  border-bottom: 3px solid #ff6666;
+  
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/*Styles for the question*/
+
+.accordion-title{
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  
+  color: black;
+  font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+  
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.accordion-title:hover{
+  color: #ff6666;
+}
+
+.accordion-title h3{
+  width: 80%;
+}
+
+/*Styles for the answer*/
+
+.accordion-content{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #ff6666;
+  transition: max-height 0.6s;
+  font-family: Open Sans;
+  font-weight: 400;
+}
+
+.accordion-content p{
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.accordion-content a{
+  padding: 15px;
+  padding-left: 5px;
+  padding-right: 2px;
+  color: rgb(231, 231, 231);
+  font-size: 20px;
+}
